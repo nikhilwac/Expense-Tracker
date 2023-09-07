@@ -1,5 +1,5 @@
-const { connect } = require('mongoose') 
-const { create } = require('../models/expenseModel') 
+const { connect } = require('mongoose')
+const { create } = require('../models/expenseModel')
 const MONGO_URL = 'mongodb://localhost:27017/expenseDetails'
 
 connect(MONGO_URL)
@@ -13,6 +13,8 @@ module.exports.submitExpense = async function (req, res) {
             expenseAmount,
             expenseName
         });
+
+        res.render('home');
 
     } catch (error) {
         console.error(error);

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>User Registration</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home">
+                <h1>User Registration</h1>
+            </a>
+            <div>
+                <a href="#">Home</a>
+                <a href="submit">About</a>
+                <a href="register">Register</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="container">
+    <form action="/register" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </form>
+</div>
+    
+</body>
+</html>

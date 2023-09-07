@@ -39,7 +39,8 @@ label {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input[type="password"] {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -75,6 +76,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    border: #6eb5ff;
+    
 }
 
 /* Table headers */
@@ -87,13 +90,14 @@ th {
 
 /* Table rows */
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    color: #6eb5ff;
 }
 
 /* Table cells */
 td {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    color: #6eb5ff;
+
 }
 
 nav {

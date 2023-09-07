@@ -12,12 +12,12 @@
     <header>
         <nav>
             <a href="home">
-                <h1>Expense Tracker</h1>
+                <h1>User Registration</h1>
             </a>
             <div>
-                <a href="home">Home</a>
+                <a href="#">Home</a>
                 <a href="submit">About</a>
-                <a href="#">Portfolio</a>
+                <a href="register">Register</a>
                 <a href="#">Contact</a>
             </div>
         </nav>
@@ -32,6 +32,7 @@
                         <tr>
                             <th>Name</th>
                             <th>Amount</th>
+                            <th>Date</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -42,6 +43,9 @@
                                 </td>
                                 <td>
                                     <%= expense.expenseAmount %>
+                                </td>
+                                <td>
+                                    <%= expense.date %>
                                 </td>
                             </tr>
                             <% }); %>

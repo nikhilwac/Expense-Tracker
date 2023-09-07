@@ -5,12 +5,12 @@ const expenseSchema = new mongoose.Schema({
     expenseAmount: Number,
     date: {
         type: Date,
-        default: Date.now // Set the default date to the current date and time
+        default: Date.now 
     },
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
-      },
+    },
 
 });
 module.exports = mongoose.model('Expense', expenseSchema);
