@@ -13,10 +13,9 @@
                 <h1>User Registration</h1>
             </a>
             <div>
-                <a href="#">Home</a>
                 <a href="submit">About</a>
                 <a href="register">Register</a>
-                <a href="#">Contact</a>
+                <a href="contact">Contact</a>
             </div>
         </nav>
 
@@ -26,6 +25,8 @@
     <form action="/register" method="POST">
         <label for="username">Username:</label>
         <input type="text" name="username" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
         <label for="password">Password:</label>
         <input type="password" name="password" required>
         <button type="submit">Register</button>
