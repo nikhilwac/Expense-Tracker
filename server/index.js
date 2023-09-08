@@ -18,13 +18,22 @@ const port = 3000
 
 const { submitExpense } = require('./controller/submitExpenseController')
 const { getExpense } = require('./controller/getExpense')
+const {userRegistration} = require('./controller/userRegistration')
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, '../public')))
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get('/home', (req, res) => {
+    res.render('home')
+})
+
+app.get('/expense', (req, res) => {
     res.render('index')
+})
+
+app.get('/contact', (req, res) => {
+    res.render('contact')
 })
 
 app.post('/submit', submitExpense);
@@ -43,21 +52,7 @@ app.get('/register', (req, res) => {
 });
 
 
-app.post('/register', (req, res) => {
-    let details = req.body
-    console.log(details);
-    res.render('register')
-    // const { username, password } = req.body;
-    // User.register(new User({ username }), password, (err, user) => {
-    //   if (err) {
-    //     console.error(err);
-    //     return res.render('register');
-    //   }
-    //   passport.authenticate('local')(req, res, () => {
-    //     res.redirect('/');
-    //   });
-    // });
-});
+app.post('/register',userRegistration);
 
 // Login User
 app.get('/login', (req, res) => {
