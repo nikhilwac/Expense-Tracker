@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home">
+                <h1>Expense Tracker</h1>
+            </a>
+            <div>
+                <a href="submit">About</a>
+                <a href="register">Register</a>
+                <a href="contact">Contact</a>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <ul class="contact-info">
+            <li>
+                <strong>Address:</strong> 123 Main Street, City, State, ZIP
+            </li>
+            <li>
+                <strong>Email:</strong> <a href="mailto:contact@example.com">contact@example.com</a>
+            </li>
+            <li>
+                <strong>Phone:</strong> <a href="tel:+1234567890">+1 (123) 456-7890</a>
+            </li>
+        </ul>
+        
+        <h2>Contact Form</h2>
+        <br>
+        <!-- You can embed a contact form here using HTML and JavaScript -->
+        <!-- Example: -->
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
