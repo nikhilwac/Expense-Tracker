@@ -1,115 +1,212 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
 h1 {
-    margin: 0;
-    color: #f4f4f4
+  margin: 0;
+  color: #f4f4f4;
+}
+
+h2 {
+  margin: 0;
+  color: #55a6dc;
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #55a6dc;
-
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #55a6dc;
 }
 
 input[type="text"],
 input[type="number"],
-input[type="password"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+input[type="password"],
+input[type="email"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 button {
-    background-color: #6eb5ff ;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+  background-color: #6eb5ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .expense-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .expense-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Add these styles to your existing CSS */
 
 /* Table styling */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    border: #6eb5ff;
-    
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: #6eb5ff;
 }
 
 /* Table headers */
 th {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    text-align: left;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
 }
 
 /* Table rows */
 tr:nth-child(even) {
-    color: #6eb5ff;
+  color: #6eb5ff;
 }
 
 /* Table cells */
 td {
-    padding: 10px;
-    color: #6eb5ff;
-
+  padding: 10px;
+  color: #6eb5ff;
 }
 
 nav {
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-between; /* Center website name and align links to the left */
-    align-items: center; /* Vertically center align the items in the nav */
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between; /* Center website name and align links to the left */
+  align-items: center; /* Vertically center align the items in the nav */
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+#hero-banner {
+  overflow: hidden;
+  height: 700px;
+  /* background: url('../images/banner/banner.jpg'); */
+  background-color: #6eb5ff;
+  background-size: cover;
+  color: #fff;
+}
+#hero-banner.item {
+  height: 558px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#hero-banner.banner-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+#hero-banner h2 {
+  margin-top: 299px;
+  font-size: 39px;
+  line-height: 49px;
+
+  text-align: right;
+}
+#hero-banner h2 b {
+  color: #f9690e;
+}
+#hero-banner p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 35px;
+
+  text-align: right;
+}
+#hero-banner a {
+  width: 150px;
+  margin: 0;
+  display: block;
+  background: transparent;
+  border: 2px solid #fff;
+  float: right;
+}
+#hero-banner a:hover {
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  background: #f9690e;
+  border: 2px solid #f9690e;
+  color: #fff;
+}
+#hero-banner.banner-inner h2 > span {
+  color: #45aed6;
+}
+#hero-banner.banner-inner .btn {
+  margin-top: 10px;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn {
+  border-width: 0;
+  border-radius: 0;
+}
+.btn.btn-primary {
+  background: #cd4f00;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background: #ff8a41;
+}
+.btn-group > .btn-lg + .dropdown-toggle {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.btn-lg .caret {
+  border-width: 5px 5px 0;
+  border-bottom-width: 0;
+}
+.dropup .btn-lg .caret {
+  border-width: 0 5px 5px;
 }

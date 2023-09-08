@@ -22,7 +22,8 @@ module.exports.getExpense = async function (req, res) {
         res.render('submit', { expenseDetails });
     }
     catch (error) {
-        console.log()`An Error occured fetching data from DB`
+        console.error(`An Error occured fetching data from DB`, error.message);
+        res.status(500).send(`An Error occured fetching data from DB`);
     }
 
 }
